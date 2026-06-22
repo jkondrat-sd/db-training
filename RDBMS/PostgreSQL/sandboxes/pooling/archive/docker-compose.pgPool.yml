@@ -52,7 +52,7 @@ services:
           memory: 512m
 
   pgpool:
-    image: bitnami/pgpool:4
+    image: soldevelo/pgpool:4
     ports:
       - 5433:5432
     depends_on:

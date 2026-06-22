@@ -9,7 +9,7 @@ networks:
 
 services:
   pg-0:
-    image: bitnami/postgresql-repmgr:14
+    image: soldevelo/postgresql-repmgr:14
     ports:
       - 5432
     volumes:
@@ -25,7 +25,7 @@ services:
       - REPMGR_NODE_NAME=pg-0
       - REPMGR_NODE_NETWORK_NAME=pg-0
   pg-1:
-    image: bitnami/postgresql-repmgr:14
+    image: soldevelo/postgresql-repmgr:14
     ports:
       - 5432
     volumes:
@@ -41,7 +41,7 @@ services:
       - REPMGR_NODE_NAME=pg-1
       - REPMGR_NODE_NETWORK_NAME=pg-1
   pgpool:
-    image: bitnami/pgpool:4
+    image: soldevelo/pgpool:4
     ports:
       - 5432:5432
     environment:
